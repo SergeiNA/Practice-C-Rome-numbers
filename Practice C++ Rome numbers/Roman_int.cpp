@@ -183,8 +183,14 @@ std::string  CRoman_int::Int2String(const int& _num)
 
 bool CRoman_int::isRoman(const std::string& str)
 {
-	std::regex e("^(M{0,3})(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])$");
+	std::regex e("^(M{0,3})(D?C{0,3}|C[DM])(L?X{0,3}|X[LC])(V?I{0,3}|I[VX])");	// ^ only begining; $ only end;
 	bool match = std::regex_match(str, e);
+
+	std::smatch m;
+	bool find = std::regex_search(str, m, e);
+	std::cout << "size: " << m.size()<<std::endl;
+	for (auto sub : m)
+		std::cout << sub << std::endl;
 	return match;
 }
 

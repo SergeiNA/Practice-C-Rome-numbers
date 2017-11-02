@@ -1,5 +1,7 @@
 /*
-	01.11.17 Rome int_numbers (from C++ practice)
+	Simple Roman numbers realization (from C++ practice)
+	........................................................................
+	01.11.17 Rome int_numbers 
 	Realize transform:
 		integer implementation to Roman implementation
 		Roman implementation in integer implementation
@@ -7,8 +9,10 @@
 	Realize arithmetic and logic
 	Add check functions
 	Add input/output functions
-*/
 
+	NEXT redevelop Str2Int in regex
+
+*/
 #include <iostream>
 #include "Roman_int.h"
 #include <vector>
