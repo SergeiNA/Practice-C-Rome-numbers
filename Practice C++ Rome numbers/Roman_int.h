@@ -6,7 +6,7 @@ class CRoman_int
 {														// service function
 	int 			Str2Int		(const std::string&);
 	std::string 	Int2String	(const int&);
-	bool			isRoman		(const std::string&);					// solve with regular expression
+	bool			isRoman		(const std::string&);	// solve with regular expression
 public:
 					CRoman_int	();
 					CRoman_int	(const int&);			//input int
